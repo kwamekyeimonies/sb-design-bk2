@@ -15,7 +15,7 @@ CREATE TABLE customer_account(
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     is_deleted BOOLEAN NOT NULL DEFAULT False,
     deleted_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    phone_number TEXT NOT NULL UNIQUE DEFAULT ''
+    phone_number TEXT NOT NULL DEFAULT ''
 );
 
 -- +goose Down
